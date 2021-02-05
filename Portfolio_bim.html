@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Portfolio_Inicio.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="flex">
+        <div class="col1">
+            <a href="./Portfolio_Projects.html"><p style="margin-top:0">back to menu</p></a>
+        </div>
+        <div class="col-centre">
+            <div class="treballs" data-value="resumViladomat">
+                <h1 class="titulo">Escuela Viladomat</h1>
+                <a href="./Portfolio_Viladomat.html"> <img src="./IMG/RenderExterior_David.jpg" alt=""></a>
+                 
+            </div>
+
+            <div class="treballs" data-value="resumCasa">
+                <h1 class="titulo">Estudio creativo</h1>
+                <a href="#"> <img src="./IMG/Prueba2+Elements.jpg" alt=""></a>
+            </div>
+
+            <div class="treballs" data-value="resumMyfair">
+                <h1 class="titulo">Vila MyFair</h1>
+                <a href=""> <img src="./IMG/Render1Final.png" alt=""></a>
+            </div>
+
+            <div class="treballs" data-value="resumUnifamiliar">
+                <h1 class="titulo">Casa unifamiliar sostenible</h1>
+                <a href=""> <img src="./IMG/Render_Comedor.jpg" alt=""></a>
+            </div>
+
+          
+        </div>
+        <div class="col2">
+            <p style="font-size: 1.5em; margin-bottom: 0">Summary</p>
+            <p style="color:#ff7300; font-size: 0.5em;margin-top: 0;">BIM work</p>
+            
+            <p class="resum" id="resumViladomat">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, debitis ea? Eligendi repellat perspiciatis quod exercitationem est error repellendus quos, corrupti tenetur, voluptate dolorum perferendis magnam, odit pariatur accusantium dolorem!</p>
+            <p class="resum" id="resumCasa">isicing elit. Reprehenderit, debitis ea? Eligendi repellat perspiciatis quod exercitationem est error repellendus quos, corrupti tenetur, voluptate dolorum perferendis magnam, odit pariatur accusantium dolorem!</p>
+            <p class="resum" id="resumMyfair">152 etur adipisicing elit. Reprehenderit, debitis ea? Eligendi repellat perspiciatis quod exercitationem est error repellendus quos, corrupti tenetur, voluptate dolorum perferendis magnam, odit pariatur accusantium dolorem!</p>
+            <p class="resum" id="resumUnifamiliar">6554isicing elit. Reprehenderit, debitis ea? Eligendi repellat perspiciatis quod exercitationem est error repellendus quos, corrupti tenetur, voluptate dolorum perferendis magnam, odit pariatur accusantium dolorem!</p>
+
+       
+        </div>
+    </div>
+    
+    <script>
+        var treballs= document.querySelectorAll(".treballs")
+        
+        treballs.forEach(element => {
+            var el = element.getAttribute("data-value");
+            console.log(el);
+            element.addEventListener("mouseenter", () => info(el));
+            element.addEventListener("mouseleave", ocultar);
+        });
+
+        function info(value){
+            id = "#" + value
+            console.log(id);
+            var output = document.querySelector(id);
+            console.log(output);
+            // Output.style.display.block = showtext1.value;
+            ocultar();
+            output.style.display = "block"
+        }
+        function ocultar(){
+            document.querySelectorAll(".resum").forEach(resum => resum.style.display = "none")
+        }
+        
+    </script>
+</body>
+</html>

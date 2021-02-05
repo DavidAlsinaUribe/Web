@@ -1,0 +1,337 @@
+
+
+body{
+    background-color: black;
+    /* background-image: url(./IMG/RenderExterior_David.jpg); */
+    width:fit-content;
+    margin: auto;
+}
+@font-face{
+    font-family: Azonix;
+    src:url(./RES/Azonix.otf) ;
+}
+@font-face{
+    font-family: Segoe;
+    src: url(./RES/segoeui.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
+#logo{
+    background-image: url(./IMG/Logo-08.png);
+    width:700px;
+    vertical-align: middle;
+    position: relative;
+    top:150px;
+    left: 0;
+    
+}
+h1{
+    color: rgb(119, 211, 82);
+    font-family: Azonix;
+    margin-bottom: 0;
+    
+    
+    
+}
+h2{
+    margin-top: 0;
+    font-family: Segoe;
+    color:#ff7300 ;
+}
+.text{
+    font-family: Segoe;
+    color: white;
+    font-size: large;
+    
+}
+.flex{
+    display: flex;
+}
+#switch{
+    justify-content: right;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+/* .inicio{
+    display: block;
+    justify-content: center;
+    
+} */
+
+.inicio a{
+    text-decoration: none;
+    color:white;
+    font-family: Azonix;
+    font-size: x-large;
+    position: relative;
+    bottom: -270px;
+    left: 170px;
+}
+.inicio a:hover{
+    text-decoration: none;
+    color:#ff7300;
+    font-family: Azonix;
+    position: relative;
+    bottom: -270px;
+    left:170px;
+}
+#flecha{
+    font-family: Azonix;
+    font-size: 4em;
+    font-weight: bolder;
+    color:#ff7300 ;
+    text-decoration: none;
+}
+.scroll{
+    text-align: center;
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left:1000px;
+}
+.apartats{
+    font-size:2.5em;
+    font-family: Azonix;
+    z-index: 1;
+    color: white;
+    position: absolute;
+    margin-top: 10em;
+    /* justify-content: space-between; */
+    text-align: center;
+    width: 30vw;
+   
+    
+   
+    /* margin: 0 0 0 2em; */
+    
+    
+}
+
+.apartats2{
+    font-size:2.5em;
+    font-family: Azonix;
+    z-index: 1;
+    color: white;
+    position: absolute;
+    margin: 11em 4.9em;
+   
+    
+    
+}
+/* .box> p{
+    margin: auto;
+    
+    
+} */
+
+.box{
+    width: 30vw;
+    height:95vh ;
+    
+    margin: 2em 1em 2em 1em;
+    
+    vertical-align: middle;
+    
+}
+.espacio{
+    
+    margin: auto;
+    width: max-content;
+}
+.box{
+   background-color:rgb(119, 211, 82, .6) ;
+     
+  
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    background-image: 
+    linear-gradient(
+      rgb(119, 211, 82),
+      rgb(119, 211, 82)
+    );
+  
+    /* margin:5em; */
+}
+.box img:hover{
+    opacity: .5;
+    color: rgb(119, 211, 82);
+}
+
+.photo{
+    opacity: .6;
+    
+}
+.mifoto{
+    float: left;
+}
+
+.col1 a{
+    text-decoration: none;
+    color: rgb(119, 211, 82) ;
+}
+.col1{
+    font-family: Azonix;
+    background-color: rgb(119, 211, 82, .2) ;
+    text-align: center;
+    font-size: 3em;
+    width: 20vw;
+    padding-top: 1em;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+}
+.col2{
+    font-family: Azonix;
+    font-size: 2em;
+    color: rgb(119, 211, 82);
+    text-align: center;
+    background-color: rgb(119, 211, 82, .2) ;
+    width: 20vw;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+}
+.col-centre{
+    color: white;
+    
+    width:60vw;
+    height: 100vh;
+    
+    margin: 0 1em;
+}
+
+.treballs>.titulo{
+    position: absolute;
+    font-family: Azonix;
+    color: #ffffff ;
+    /* margin-top: 3.8em; */
+    width: 50vw;
+    height: 15vh;
+    align-items: center;
+    
+    
+    
+    
+}
+.treballs{
+  color: white;
+  background-color:rgb(119, 211, 82) ;
+  border-radius: .5em;
+  width: 50vw;
+  height: 15vw;
+  margin: auto;
+  margin-bottom: 2em;
+  text-align: center;
+ 
+}
+.treballs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: middle;
+    background-image: 
+    linear-gradient(
+      rgb(119, 211, 82,.2),
+      rgb(119, 211, 82,.8)
+    );
+    border-radius: .5em;
+}
+.treballs img:hover{
+    opacity: .5;
+    color: rgb(119, 211, 82);
+}
+#resumViladomat{
+    color:white;
+    margin: 0 1em;
+    font-family: Segoe;
+    font-size: medium;
+    margin-top: 3em;
+    display: none;
+}
+#resumCasa{
+    color:white;
+    margin: 0 1em;
+    font-family: Segoe;
+    font-size: medium;
+    margin-top: 3em;
+    display: none;
+}
+#resumMyfair{
+    color:white;
+    margin: 0 1em;
+    font-family: Segoe;
+    font-size: medium;
+    margin-top: 3em;
+    display: none;
+}
+#resumUnifamiliar{
+    color:white;
+    margin: 0 1em;
+    font-family: Segoe;
+    font-size: medium;
+    margin-top: 3em;
+    display: none;
+}
+#titolViladomat{
+    display: none;
+}
+#titolCasa{
+    display: none;
+}
+#titolMyfair{
+    display: none;
+}
+#titolUnifamiliar{
+    display: none;
+}
+.viladomat{
+  width: fit-content;
+  height: max-content;
+
+}
+.viladomat img{
+    width: 40vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: middle;
+}
+.viladomat img:active{
+    width: 100vw;
+    height: 100vh ;
+
+
+}
+@media only screen and (max-width: 600px) {
+    .flex {
+      display: block;
+    }
+    .viladomat img{
+        width: 100vw;
+        height: 100vh;
+       
+    }
+    .col2{
+        display: none;
+    }
+    .titulo{
+        font-size: 2em;
+    }
+    .treballs{
+        width: 100vw;
+        height: 50vh;
+        justify-content: center;
+        margin:auto;
+    }
+    .col-centre{
+        width: 100vw;
+    }
+    .col1{
+        display: none;
+    }
+}
